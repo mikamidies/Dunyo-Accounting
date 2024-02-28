@@ -1,9 +1,21 @@
 <script>
-export default {};
+export default {
+  mounted() {
+    function scrollHeader() {
+      const navbar = document.getElementById("navbar");
+      if (this.scrollY >= 50) {
+        navbar.classList.add("scroll");
+      } else {
+        navbar.classList.remove("scroll");
+      }
+    }
+    window.addEventListener("scroll", scrollHeader);
+  },
+};
 </script>
 
 <template>
-  <div class="wrap">
+  <div class="wrap" id="navbar">
     <div class="container">
       <div class="left">
         <NuxtLink to="/"
@@ -73,7 +85,12 @@ export default {};
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
+  transition: 0.4s;
+}
+.wrap.scroll {
+  padding: 16px 0;
+  background: var(--blue);
 }
 .container {
   display: flex;

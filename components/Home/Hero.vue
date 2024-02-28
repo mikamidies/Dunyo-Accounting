@@ -300,6 +300,7 @@ video {
   justify-content: center;
   border: 1px solid white;
   border-radius: 50%;
+  display: none;
 }
 .next {
   position: absolute;
@@ -314,6 +315,7 @@ video {
   justify-content: center;
   border: 1px solid white;
   border-radius: 50%;
+  display: none;
 }
 .next svg {
   transform: rotate(180deg);

@@ -5,6 +5,7 @@ export default {};
 <template>
   <div class="master">
     <HomeHero />
+    <HomeAbout />
   </div>
 </template>
 
