@@ -8,6 +8,7 @@ export default {};
     <HomeAbout />
     <HomeNumbers />
     <HomeServices />
+    <HomeNews />
   </div>
 </template>
 
